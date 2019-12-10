@@ -42,7 +42,7 @@ public class FlightBookingTest extends BaseClass {
 
 		// select the first item from the destination auto complete list
 		List<WebElement> destinationOptions = driver.findElement(By.id("ui-id-2")).findElements(By.tagName("li"));
-		destinationOptions.get(0).click();
+		operation.clickOnObject(destinationOptions.get(0));
 
 		// Selecting the date of departure
 		operation.clickOnObject(OR.datePickerLink);
